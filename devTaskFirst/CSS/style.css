@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navHeader{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 10000;
+    transform: 0.5s;
+    text-align: center;   
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+.navList{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+    width: 100%;
+}
+.navList li {
+    list-style-type: none;
+}
+.navList li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+.logo{
+   width: 15%;
+}
+.conotact a{
+   font-size: 22px;
+   color: #fff;
+   text-decoration: none; 
+   border: 1px solid #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+.firstSection{
+    height: 100vh;
+    width: 100%;
+    background: rgb(60, 63, 84);
+}
+.wraperSection{
+    position: relative;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 0 135px;
+    top: 100px;
+}
+.leftSection{
+    max-width: 50%;
+    height: 350px;
+   /* border: 1px solid red;
+    margin-top: 250px;*/ 
+}
+.leftSection h5{
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #ce5d5d;
+}
+.leftSection h2{
+    margin-bottom: 15px;
+    font-size: 72px;
+    color: #fff;
+}
+.leftSection p{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+}
+.leftSection .button button{
+    padding: 10px 15px;
+   background: rgb(188, 74, 74); 
+    color: #fff;  
+    border-radius: 5px;
+}
+.leftSection .button a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    
+}
+.rightSection{
+    max-width: 50%;
+ /*   border: 1px solid red; */
+    margin-left: 90px;
+    margin-top: 60px;
+}
