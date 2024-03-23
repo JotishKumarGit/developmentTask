@@ -1,9 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.navHeader{
+
+/* This is a heading */
+.navHeader {
     width: 100%;
     position: fixed;
     display: flex;
@@ -13,44 +15,60 @@
     padding: 20px 0;
     z-index: 10000;
     transform: 0.5s;
-    text-align: center;   
+    text-align: center;
 }
-.navBar{
+
+.navHeader.sticky {
+    background: #28293E;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.6s;
+}
+
+.navBar {
     display: flex;
     align-items: center;
     width: 55%;
 }
-.navList{
+
+.navList {
     display: flex;
     justify-content: space-between;
     margin-right: 250px;
     width: 100%;
 }
+
 .navList li {
     list-style-type: none;
 }
-.navList li a{
+
+.navList li a {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
 }
-.logo{
-   width: 15%;
+
+.logo {
+    width: 15%;
 }
-.conotact a{
-   font-size: 22px;
-   color: #fff;
-   text-decoration: none; 
-   border: 1px solid #fff;
-   padding: 5px 10px;
-   border-radius: 5px;
+
+.conotact a {
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-.firstSection{
+
+/* This is a first Section */
+.firstSection {
     height: 100vh;
     width: 100%;
-    background: rgb(60, 63, 84);
+    background: #28293E;
 }
-.wraperSection{
+
+.wraperSection {
     position: relative;
     display: flex;
     text-align: left;
@@ -58,42 +76,285 @@
     margin: 0 135px;
     top: 100px;
 }
-.leftSection{
+
+.leftSection {
     max-width: 50%;
     height: 350px;
-   /* border: 1px solid red;
-    margin-top: 250px;*/ 
+    /* border: 1px solid red;
+    margin-top: 250px;*/
 }
-.leftSection h5{
+
+.leftSection h5 {
     margin-bottom: 15px;
     font-size: 25px;
     color: #ce5d5d;
 }
-.leftSection h2{
+
+.leftSection h2 {
     margin-bottom: 15px;
     font-size: 72px;
     color: #fff;
 }
-.leftSection p{
+
+.leftSection p {
     margin-bottom: 15px;
     font-size: 20px;
     color: rgb(200, 200, 200);
 }
-.leftSection .button button{
+
+.leftSection .button button {
     padding: 10px 15px;
-   background: rgb(188, 74, 74); 
-    color: #fff;  
+    background: rgb(188, 74, 74);
+    color: #fff;
     border-radius: 5px;
 }
-.leftSection .button a{
+
+.leftSection .button a {
     color: #fff;
     text-decoration: none;
     margin-left: 25px;
-    
 }
-.rightSection{
+
+.rightSection {
     max-width: 50%;
- /*   border: 1px solid red; */
+    /*   border: 1px solid red; */
     margin-left: 90px;
     margin-top: 60px;
 }
+
+/* This is second Section */
+.secondSection {
+    background: #28293E;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+
+.wraperSection-1 {
+    display: flex;
+    margin: 0 135px;
+}
+
+.feature {
+    margin-top: 100px;
+    width: 45%;
+    height: 300px;
+}
+
+.feature h5 {
+    font-size: 20px;
+    color: #ce5d5d;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature h6 {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.accessibity {
+    margin-top: 100px;
+    width: 45%;
+
+    height: 500px;
+    display: flex;
+}
+
+.profesional {
+    height: 300px;
+    width: 50%;
+    background: #fff;
+}
+
+.shape {
+    margin-top: 60px;
+    margin-left: 40px;
+    padding: 35px;
+    background: rgb(194, 67, 67);
+    border-radius: 40%;
+    margin-bottom: 20px;
+}
+
+.profesional h3 {
+    padding-left: 40px;
+    margin-bottom: 20px;
+
+}
+
+.profesional p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.acess {
+    height: 200px;
+    border: 1px solid #fff;
+    padding-left: 30px;
+    margin-top: 100px;
+}
+
+.acess h5 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.acess p{
+    margin-bottom: 50px;
+    color: rgb(219, 211, 211);
+}
+.thirdSection{
+    height: 100vh;
+    width: 100%;
+    background-color: #28293E;
+}
+.wraperSection-2{
+    margin: 0 135px;
+    display: flex;
+}
+.leftPic{
+    width: 566px;
+    height: 585px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+}
+.rightContent{
+    height: 500px;
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+.rightContent h6{
+    font-size: 16px;
+    color: #EF6D58;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-family: Epilogue;
+    margin-bottom: 25px;
+}
+.rightContent h2{
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #FFF;
+    margin-bottom: 25px;
+}
+.rightContent h5{
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #FFF;
+    margin-bottom: 25px;
+}
+.rightContent p{
+   font-family: Epilogue;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 32px;
+   text-align: left;
+   color: #fff;
+   margin-bottom: 25px;
+}
+.rightContent button{
+    padding: 10px 15px;
+    background-color: #bf35c4;
+    color: #fff;
+    border-radius: 7px;
+}
+.fourthSection{
+    background: #28293E;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+.wraperSection-3{
+    margin: 0 135px;
+}
+.content h5{
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #EF6D58;
+    margin-bottom: 25px;
+}
+.content h2{
+    width: 30%;
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left; 
+    margin-bottom: 80px;
+    color: #fff;
+}
+.services{
+    display: flex;
+}
+.servicesExpert{
+    height: 350px;
+    width: 500px;
+    background-color: #fff;
+    border: 1px solid rgb(151, 99, 99);
+    padding-right: 70px;
+}
+
+.servicesExpert .imgTool{
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 30px;
+    border-radius: 45%; 
+    line-height: 32px;
+    margin-bottom: 30px;
+    background-color: #EF6C57;
+}
+.servicesExpert h2{
+    margin-left: 60px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.servicesExpert p{
+    margin-left: 60px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.servicesExpert h4{
+    margin-left: 60px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
