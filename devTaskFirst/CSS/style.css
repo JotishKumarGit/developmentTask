@@ -2,8 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
 /* This is a heading */
 .navHeader {
     width: 100%;
@@ -17,41 +22,34 @@
     transform: 0.5s;
     text-align: center;
 }
-
 .navHeader.sticky {
     background: #28293E;
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: 0.6s;
 }
-
 .navBar {
     display: flex;
     align-items: center;
     width: 55%;
 }
-
 .navList {
     display: flex;
     justify-content: space-between;
     margin-right: 250px;
     width: 100%;
 }
-
 .navList li {
     list-style-type: none;
 }
-
 .navList li a {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
 }
-
 .logo {
     width: 15%;
 }
-
 .conotact a {
     font-size: 22px;
     color: #fff;
@@ -60,14 +58,12 @@
     padding: 5px 10px;
     border-radius: 5px;
 }
-
 /* This is a first Section */
 .firstSection {
     height: 100vh;
     width: 100%;
     background: #28293E;
 }
-
 .wraperSection {
     position: relative;
     display: flex;
@@ -76,52 +72,48 @@
     margin: 0 135px;
     top: 100px;
 }
-
 .leftSection {
     max-width: 50%;
     height: 350px;
-    /* border: 1px solid red;
-    margin-top: 250px;*/
 }
-
 .leftSection h5 {
     margin-bottom: 15px;
     font-size: 25px;
     color: #ce5d5d;
 }
-
 .leftSection h2 {
     margin-bottom: 15px;
     font-size: 72px;
     color: #fff;
 }
-
 .leftSection p {
     margin-bottom: 15px;
     font-size: 20px;
     color: rgb(200, 200, 200);
 }
-
 .leftSection .button button {
     padding: 10px 15px;
     background: rgb(188, 74, 74);
     color: #fff;
     border-radius: 5px;
 }
-
 .leftSection .button a {
     color: #fff;
     text-decoration: none;
     margin-left: 25px;
 }
-
 .rightSection {
     max-width: 50%;
-    /*   border: 1px solid red; */
     margin-left: 90px;
     margin-top: 60px;
 }
+/* This is a Horizontal Line */
+.horizontalLineFisrtSec{
+  height: 1px;
+  width: 70%;
+ margin-left: 135px;
 
+}
 /* This is second Section */
 .secondSection {
     background: #28293E;
@@ -187,7 +179,6 @@
 .profesional h3 {
     padding-left: 40px;
     margin-bottom: 20px;
-
 }
 
 .profesional p {
@@ -209,33 +200,41 @@
     margin-top: 40px;
     margin-bottom: 25px;
 }
-.acess p{
+
+.acess p {
     margin-bottom: 50px;
     color: rgb(219, 211, 211);
 }
-.thirdSection{
+
+/* This is a Third Section*/
+.thirdSection {
     height: 100vh;
     width: 100%;
     background-color: #28293E;
 }
-.wraperSection-2{
+
+.wraperSection-2 {
     margin: 0 135px;
     display: flex;
+    margin-bottom: 350px;
 }
-.leftPic{
+
+.leftPic {
     width: 566px;
     height: 585px;
     left: 135px;
     gap: 0px;
     opacity: 0px;
 }
-.rightContent{
+
+.rightContent {
     height: 500px;
     width: 50%;
     padding-top: 80px;
     padding-left: 100px;
 }
-.rightContent h6{
+
+.rightContent h6 {
     font-size: 16px;
     color: #EF6D58;
     line-height: 32px;
@@ -243,7 +242,8 @@
     font-family: Epilogue;
     margin-bottom: 25px;
 }
-.rightContent h2{
+
+.rightContent h2 {
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
@@ -253,7 +253,8 @@
     color: #FFF;
     margin-bottom: 25px;
 }
-.rightContent h5{
+
+.rightContent h5 {
     font-family: Epilogue;
     font-size: 20px;
     font-weight: 400;
@@ -262,31 +263,37 @@
     color: #FFF;
     margin-bottom: 25px;
 }
-.rightContent p{
-   font-family: Epilogue;
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 32px;
-   text-align: left;
-   color: #fff;
-   margin-bottom: 25px;
+
+.rightContent p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 25px;
 }
-.rightContent button{
+
+.rightContent button {
     padding: 10px 15px;
     background-color: #bf35c4;
     color: #fff;
     border-radius: 7px;
 }
-.fourthSection{
+
+/* This ia a Fourth Section */
+.fourthSection {
     background: #28293E;
     margin: auto;
-    height: 500px;
+    height: 540px;
     width: 100%;
 }
-.wraperSection-3{
+
+.wraperSection-3 {
     margin: 0 135px;
 }
-.content h5{
+
+.content h5 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
@@ -296,65 +303,1397 @@
     color: #EF6D58;
     margin-bottom: 25px;
 }
-.content h2{
+
+.content h2 {
     width: 30%;
     font-family: Epilogue;
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
-    text-align: left; 
+    text-align: left;
     margin-bottom: 80px;
     color: #fff;
 }
-.services{
+
+.services {
     display: flex;
 }
-.servicesExpert{
-    height: 350px;
-    width: 500px;
+
+.servicesExpert {
+    height: 400px;
+    width: 600px;
     background-color: #fff;
     border: 1px solid rgb(151, 99, 99);
-    padding-right: 70px;
+    padding-right: 100px;
 }
 
-.servicesExpert .imgTool{
+.servicesExpert .imgTool {
     margin-top: 40px;
     margin-left: 60px;
     padding: 30px;
-    border-radius: 45%; 
+    border-radius: 45%;
     line-height: 32px;
     margin-bottom: 30px;
     background-color: #EF6C57;
 }
-.servicesExpert h2{
+
+.servicesExpert h2 {
     margin-left: 60px;
     line-height: 32px;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 25px;
 }
-.servicesExpert p{
+
+.servicesExpert p {
     margin-left: 60px;
     line-height: 32px;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 25px;
 }
-.servicesExpert h4{
+
+.servicesExpert h4 {
     margin-left: 60px;
     line-height: 32px;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 25px;
     color: #000;
 }
 
+/* This is a fifth section */
+.fifthSection {
+    height: 2000px;
+    width: 100%;
+    /*  background-color: #FDF0E9; */
+    background-color: #FDF0E9;
+}
 
+.wraperSection-4 {
+    display: flex;
+    margin: 0 135px 0 135px;
+}
 
+.leftImgBack {
+    margin-top: 230px;
+    background: url(../assets/images/Bitmap.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 600px;
+}
 
+.leftImgBack .play {
+    margin-top: 100px;
+    margin-bottom: 170px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
 
+.wraperSection-4 .rightContent {
+    margin-top: 200px;
+}
 
+.rightContent h5 {
+    color: #EF6C57;
+}
 
+.wraperSection-4 .rightContent h2 {
+    color: #000;
+}
 
+.wraperSection-4 .rightContent p {
+    color: #000;
+}
 
+.experienceSheet {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
 
+.yearOfExperience {
+    height: 190px;
+    width: 450px;
+    border: 1px solid #F3D1BF;
+    padding-left: 30px;
+}
+
+.yearOfExperience h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: Epilogue;
+}
+
+.yearOfExperience p {
+    font-size: 16px;
+    font-family: Epilogue;
+    font-weight: 300;
+}
+
+.work {
+    margin-top: 110px;
+    margin-left: 135px;
+    margin-right: 135px;
+    display: flex;
+    width: 100%;
+}
+
+.work .howWork {
+    height: 300px;
+    width: 30%;
+
+}
+
+.work .howWork h4 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #EF6D58;
+    margin-bottom: 10px;
+}
+
+.work .howWork h2 {
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.work .howWork p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.work .howWork h5 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.fullServices {
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 70px;
+    height: 350px;
+
+}
+
+.same {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.one::before {
+    content: "1        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+
+}
+
+.two::before {
+    content: "2        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+
+}
+
+.three::before {
+    content: "3        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+}
+
+/* Portfolio section */
+.porfolio {
+    margin-top: 80px;
+}
+
+.portfolioContent {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #EF6D58;
+    margin-bottom: 40px;
+}
+.latestWork {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #391400;
+    margin-bottom: 50px;
+}
+.showAllWork {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.showAllWork h3 {
+    padding-right: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+/* From hare is different work like Techonology */
+.technology {
+    /* background-color: #28293E; */
+    height: 100%;
+    width: 100%;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.techTool {
+    width: 90%;
+    position: relative;
+    display: flex;
+}
+
+.techImg {
+    margin: 10px;
+    width: 400px;
+}
+
+.techTool .techImg {
+    height: 416px;
+    width: 400px;
+}
+
+.techTool .techImg .head3 {
+    top: 250px;
+    left: 70px;
+    position: absolute;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.techTool .techImg .head2 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    left: 70px;
+    position: absolute;
+    color: #fff;
+}
+.techTool1 {
+    width: 90%;
+    position: relative;
+    display: flex;
+}
+.head3-2 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.head2-2 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+.head3-3 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.head2-3 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-4 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-4 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-5 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-5 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-6 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-6 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.buttonE button {
+    margin-left: 500px;
+    margin-top: 40px;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #28293E;
+}
+/* This is a sixth section */
+.sixthSection {
+    background-color: #28293E;
+    border: 1px solid #28293E;
+    height: 440vh;
+}
+.company {
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.comStarted {
+    margin-top: 970px;
+    display: flex;
+    height: 350px;
+    width: 1240px;
+    background-color: #FDF0E9;
+    background-position: center;
+}
+.started {
+    background: url(../assets/images/Combined\ Shape1.png);
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    padding-bottom: 150px;
+    border: 1px solid #fff;
+}
+.started img{
+   
+
+}
+.started {
+    height: auto;
+    width: 20%;
+}
+.started h5 {
+    margin-top: 70px;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #EF6C57;
+}
+.started h2 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.started button {
+    padding: 10px 15px;
+    background-color: #EF6C57;
+    border-radius: 7px;
+}
+.para {
+    height: auto;
+    width: 20%;
+}
+.para p {
+    margin-top: 150px;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+.imag {
+    background: url(../assets/images/Path.png);
+    background-repeat: no-repeat;
+    height: auto;
+    width: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-left: 60px;
+}
+/* From hare the other work are implemented  (About)*/
+.aboutSec {
+    margin-left: 135PX;
+    margin-right: 135PX;
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+}
+.aboutSec .aboutContent {
+    height: auto;
+    width: 25%;
+    margin-left: 150px;
+}
+.aboutSec .aboutContent h5 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-top: 40px;
+    color: #ce5d5d;
+    margin-bottom: 20px;
+}
+
+.aboutSec .aboutContent h2 {
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.aboutSec .aboutContent h4 {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.aboutSec .aboutContent p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.aboutSec .aboutContent button {
+    padding: 10px 15px;
+    color: #FFF;
+    background-color: #bf35c4;
+    border-radius: 10px;
+}
+
+.testomonials {
+    margin-top: 160px;
+    width: 100%;
+}
+
+.testContent {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+.testContent h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testContent h2 {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.testReview {
+    margin-left: 135PX;
+    margin-right: 135PX;
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+    display: flex;
+}
+
+.review1 {
+    height: 400px;
+    width: 620px;
+    border: 1px solid rgb(239, 212, 212);
+    background-color: #FFF;
+}
+
+.heightM {
+    height: 440px;
+    width: 620px;
+}
+
+.review1 .revImg {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.review1 .ParaG {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.photogram {
+    display: flex;
+}
+
+.photogram .revImgPic {
+    margin-left: 50px;
+    padding-right: 40px;
+}
+
+.name h3 {
+    font-family: Epilogue;
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+}
+
+.name h5 {
+    font-family: Epilogue;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: #fff;
+}
+
+.buttonSeeAll {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* This is a seven section*/
+.seventhSection {
+    height: 500vh;
+    width: 100%;
+    background-color: #FDF0E9;
+    padding: 10px 15px;
+}
+
+.pricrContent {
+    margin-top: 300px;
+    margin-left: 120px;
+    width: 30%;
+}
+
+.pricrContent h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.pricrContent h2 {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #391400;
+}
+
+.pricPlan {
+    display: flex;
+    margin-left: 120px;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.consaltation {
+    height: 512px;
+    width: 420px;
+
+    margin-top: 30px;
+    padding-left: 60px;
+    padding-top: 50px;
+    box-shadow: 1px 1px 1px;
+}
+
+.consaltation h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.consaltation h2 {
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.consaltation p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 25px;
+    width: 50%;
+}
+
+.consaltation .brandDesign {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.brandDesign h4 {
+    padding-left: 20px;
+}
+
+.consaltation button {
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+.popular {
+    height: 542px;
+    width: 420px;
+    border: 1px solid #fff;
+    padding-left: 60px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.popular img {
+    margin-bottom: 10px;
+}
+
+.popular h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.popular h2 {
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.popular p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 25px;
+    width: 50%;
+}
+
+.brandDesign {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.brandDesign h4 {
+    padding-left: 20px;
+}
+
+.popular button {
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+
+/* From hare FAQ */
+.faq {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 135px;
+    margin-right: 135px;
+    width: 100%
+}
+
+.faqFrequent {
+    width: 40%;
+    height: auto;
+}
+
+.faq1 h5 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #EF6C57;
+    margin-bottom: 10px;
+}
+
+.faq1 h2 {
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.faq1 p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 70%;
+
+}
+
+.faqFrequent1 {
+    width: 44%;
+    height: 680px;
+    border: 1px solid #fff;
+}
+
+.faq2 {
+    height: 250px;
+    width: 650px;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.agency {
+    display: flex;
+}
+
+.agency h3 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 45px;
+    margin-right: 180px;
+}
+
+.agency .up {
+    margin-bottom: 45px;
+}
+
+.faq2 {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.agencyWrap {
+    display: flex;
+    padding: 40px;
+    border: 1px solid white;
+}
+
+.agencyWrap h3 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.agencyWrap .down {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+
+.agencyWrap1 {
+    display: flex;
+    padding: 40px;
+    border: 1px solid white;
+}
+
+.agencyWrap1 h3 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.agencyWrap1 .down {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 302px;
+
+}
+
+.agencyWrap2 {
+    display: flex;
+    padding: 40px;
+    border: 1px solid white;
+}
+
+.agencyWrap2 h3 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.agencyWrap2 .down {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 215px;
+}
+
+/* From hare logo 1*/
+.logo1 {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.horizontalLine {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.award {
+    margin-top: 70px;
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 135px;
+}
+
+.award1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.award1 {
+    margin-top: 30px;
+}
+
+.award1 h3 {
+    width: 25%;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Epilogue;
+}
+
+.award1 h4 {
+    width: 35%;
+    text-align: center;
+}
+
+.award1 h6 {
+    width: 25%;
+    text-align: right;
+    font-size: 16px;
+}
+
+.award1 h2 {
+    width: 10%;
+    padding-left: 10px;
+}
+
+.horizontalLine1 {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.moreExp {
+    display: flex;
+    margin-top: 45px;
+    text-align: center;
+    justify-content: center;
+}
+
+.moreExp span {
+    margin-right: 10px;
+}
+
+/* From hare is a blog section */
+.blogSec {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 150px;
+}
+
+.blog h5 {
+    color: #EF6D58;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.blog h2 {
+    width: 90%;
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #391400;
+}
+
+.discoverAll {
+    margin-top: 140px;
+}
+
+.discoverAll button {
+    background-color: #FFF;
+    padding: 10px 20px;
+}
+
+/* From hare is blog Image */
+.blogImg {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.blogSrories img {
+    margin-bottom: 20px;
+}
+
+.blogSrories h3 {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Epilogue;
+}
+
+.blogSrories h2 {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Epilogue;
+    width: 70%;
+}
+
+.blogSrories h5 {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Epilogue;
+}
+
+/* From hare is Eight section */
+.eightSection {
+    background-color: #28293E;
+    border: 1px solid #28293E;
+    height: 200vh;
+    width: 100%;
+}
+
+.horizontalLineRule {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 300px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 40px;
+}
+
+.newsLetter h2 {
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+}
+
+.subscribe input {
+    padding: 10px 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 8px 20px;
+    color: #FFF;
+    background-color: #28293E;
+    border-radius: 7px;
+}
+
+.horizontalLineRule1 {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.info {
+    display: flex;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 60px;
+}
+
+.touch {
+    height: 500px;
+    width: 600px;
+    background-color: #FFF;
+    padding: 50px;
+}
+
+.touch h4 {
+    font-family: Epilogue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.touch .inpUt input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.touch .inpUt textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.touch .submitNow {
+    width: 100%;
+    text-align: right;
+}
+
+.touch .submitNow button {
+    padding: 10px 25px;
+    background-color: #EF6C57;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact {
+    height: 500px;
+    width: 600px;
+    padding: 50px 0px 0px 150px;
+    margin-left: 50px;
+}
+
+.contact h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    color: #fff;
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #FFFFFFA3;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact .contactNum {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contactNum img {
+    padding: 10px;
+    margin-right: 50px;
+    background-color: #EF6C57;
+    border-radius: 42%;
+}
+
+.contactNum h4 {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+}
+
+/* From hare you to build your dream project Helping */
+
+.helpingForProject {
+    display: flex;
+    margin: 120px 135px 0 135px;
+    height: 500px;
+    width: 82%;
+    padding: 40px;
+    position: relative;
+    background-color: #EF6D58;
+}
+
+.helping1 {
+    width: 50%;
+    height: 450;
+    padding: 70px 100px 0px 50px;
+}
+
+.helping1 h2 {
+    color: #FFFFFF;
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.helping1 p {
+    color: #FFFFFFA3;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.helping1 button {
+    padding: 10px 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.helping2 {
+    height: 450px;
+    width: 50%;
+    padding-left: 50px;
+}
+
+/*From hare the footer */
+footer {
+
+    background-color: #FDF0E9;
+    height: 84vh;
+    width: 100%;
+    border: 1px solid #FDF0E9;
+
+}
+
+.webflow {
+    display: flex;
+    justify-content: space-between;
+    margin: 250px 135px 0px 135px;
+}
+
+.footerMenu h5 {
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footerMenu h6 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.footerService  h5{
+    color: #EF6C57;
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footerService h6 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 135px 0px 135px;
+}
+.foot p{
+  width: 80%;
+}
