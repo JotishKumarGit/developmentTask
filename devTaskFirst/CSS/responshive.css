@@ -18,23 +18,23 @@
     }
 
     .contact {
-      /*  display: none; */
+       display: none; 
     }
     .contact a{
-      /*  display: none; */
+       display: none; 
     }
 
     .navList {
-       /*  display: none; */
+        display: none; 
     }
 
     .navBar {
         width: auto;
     }
-    /* This is new */
+    /* This is new 
     .navBar .navList,.contact a {
         background-color: red;
-    }
+    }*/
 
     .logo {
         margin: 0;
