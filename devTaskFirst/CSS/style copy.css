@@ -5,59 +5,40 @@
     scroll-behavior: smooth;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-
-}
 
 /* This is a heading */
 .navHeader {
     width: 100%;
     position: fixed;
+    display: flex;
+    justify-content: space-around;
     top: 0;
     left: 0;
-    background-color: #28293E;
-    z-index: 1;
-}
-
-.navWraper {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    max-width: 168px;
-    width: 100%;
-    margin-right: 160px;
-}
-
-.navBar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0;
+    transform: 0.5s;
+    text-align: center;
 }
 
 .navHeader.sticky {
     background: #28293E;
+    padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: 0.6s;
+    max-width: 100vw;
+    max-height: 60vh;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    position: relative;
 }
 
 .navList {
     display: flex;
     justify-content: space-between;
-    max-width: 515px;
+    margin-right: 250px;
     width: 100%;
 }
 
@@ -71,11 +52,16 @@ img {
     font-size: 22px;
 }
 
-.contact {
-    display: flex;
+.logo {
+    width: 15%;
 }
 
-.contact a {
+.conotact {
+    display: flex;
+    width: 40%;
+}
+
+.conotact a {
     font-size: 22px;
     color: #fff;
     text-decoration: none;
@@ -85,909 +71,855 @@ img {
     margin-left: 40px;
 }
 
-.menu {
+.conotact img {
+    margin-left: 40px;
     display: none;
 }
 
-/* This is a firstSection */
+/* This is a first Section */
 .firstSection {
+    height: 100vh;
     width: 100%;
     background: #28293E;
 }
 
-/*First section of rowWraper */
-.rowWraper {
+.wraperSection {
+    position: relative;
     display: flex;
-    width: 100%;
-}
-
-/*First section of column left */
-.columnLeft {
-    width: 100%;
-    margin-top: 268px;
-    margin-right: 87px;
-}
-
-.columnLeft h5 {
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 3px;
     text-align: left;
-    margin-bottom: 24px;
-    color: #EF6D58;
+    align-items: center;
+    margin: 0 135px;
+    top: 100px;
 }
 
-.columnLeft h2 {
-    max-width: 513px;
-    font-family: Epilogue;
+.leftSection {
+    max-width: 50%;
+    height: 350px;
+}
+
+.leftSection h5 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #ce5d5d;
+}
+
+.leftSection h2 {
+    margin-bottom: 15px;
     font-size: 72px;
-    font-weight: 800;
-    line-height: 80px;
-    letter-spacing: -2px;
-    text-align: left;
-    color: #FFFFFF;
-    margin-bottom: 24px;
-}
-
-.columnLeft p {
-    max-width: 470px;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    color: #FFFFFFA3;
-    margin-bottom: 34px;
-}
-
-.columnLeft .button button {
-    padding: 10px 20px;
-    border-radius: 7px;
-    background-color: #EF6D58;
     color: #fff;
-    font-family: Epilogue;
-    font-size: 14px;
-    font-weight: 900;
-    margin-right: 46px;
 }
 
-.button a {
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF;
+.leftSection p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+}
+
+.leftSection .button button {
+    padding: 10px 15px;
+    background: rgb(188, 74, 74);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.leftSection .button a {
+    color: #fff;
     text-decoration: none;
-
+    margin-left: 25px;
 }
 
-/*First section of column right */
-.columnRight {
-    margin-top: 178px;
-    width: 100%;
+.rightSection {
+    max-width: 50%;
+    margin-left: 90px;
+    margin-top: 60px;
 }
 
-
-/* This is a Horizontal Line code */
-.horizontalLine {
+/* This is a Horizontal Line */
+.horizontalLineFirstSec {
     height: 1px;
     width: 100%;
+    color: #3A3C56;
     background-color: #3A3C56;
-    margin-top: 100px;
 }
 
-.rowWraper1 {
+/* This is second Section */
+.secondSection {
+    background: #28293E;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+
+.wraperSection-1 {
     display: flex;
+    margin: 0 135px;
 }
 
 .feature {
-    margin-top: 156px;
-    margin-right: 157px;
+    margin-top: 100px;
+    width: 45%;
+    height: 300px;
 }
 
 .feature h5 {
-    color: #EF6D58;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-align: left;
-    margin-bottom: 36px;
+    font-size: 20px;
+    color: #ce5d5d;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .feature h2 {
-    max-width: 327px;
-    width: 100%;
+    font-size: 72px;
     color: #fff;
-    font-family: Epilogue;
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 64px;
-    letter-spacing: -1px;
-    text-align: left;
-    margin-bottom: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .feature h6 {
+    font-size: 20px;
+    font-weight: 200;
     color: #fff;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-
 }
 
 .accessibity {
+    margin-top: 100px;
+    width: 45%;
+
+    height: 500px;
     display: flex;
 }
 
 .profesional {
-    margin-top: 112px;
-    height: 336px;
-    max-width: 336px;
-    width: 100%;
-    background-color: #fff;
+    height: 300px;
+    width: 50%;
+    background: #fff;
 }
 
 .shape {
-    width: auto;
-    background-color: #EF6C57;
-    padding: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
+    padding: 35px;
+    background: rgb(194, 67, 67);
     border-radius: 40%;
-    margin: 48px 0px 41px 48px;
-}
-
-.profesional h3 {
-    font-family: Epilogue;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-    padding: 0 0px 19px 48px;
-}
-
-.profesional p {
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 32px;
-    text-align: left;
-    color: #391400A3;
-    padding: 0 48px 46px 48px;
-}
-
-.acess {
-    margin-top: 175px;
-    border: 1px solid #3A3C56;
-    padding-left: 48px;
-    max-width: 336px;
-    padding-top: 105px;
-}
-
-.acess h5 {
-    color: #fff;
-    font-family: Epilogue;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-}
-
-.acess p {
-    color: #FFFFFFA3;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    padding: 19px 48px 46px 0;
-}
-
-/* This is rowWraper2 */
-.rowWraper2 {
-    display: flex;
-}
-
-.webflow {
-    margin-top: 197px;
-    margin-right: 134px;
-}
-
-.webflow .leftImg {
-    width: auto;
-}
-
-.about {
-    margin-top: 268px;
-}
-
-.about h6 {
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-align: left;
-    color: #EF6D58;
     margin-bottom: 20px;
 }
 
-.about h2 {
+.profesional h3 {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.profesional p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.acess {
+    height: 200px;
+    border: 1px solid #fff;
+    padding-left: 30px;
+    margin-top: 100px;
+}
+
+.acess h5 {
+    font-size: 30px;
+    font-weight: 400;
     color: #fff;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.acess p {
+    margin-bottom: 50px;
+    color: rgb(219, 211, 211);
+}
+
+/* This is a Third Section*/
+.thirdSection {
+    height: 100vh;
+    width: 100%;
+    background-color: #28293E;
+}
+
+.wraperSection-2 {
+    margin: 0 135px;
+    display: flex;
+    margin-bottom: 350px;
+}
+
+.leftPic {
+    width: 566px;
+    height: 585px;
+    left: 135px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.rightContent {
+    height: 500px;
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.rightContent h6 {
+    font-size: 16px;
+    color: #EF6D58;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-family: Epilogue;
+    margin-bottom: 25px;
+}
+
+.rightContent h2 {
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
     line-height: 64px;
     letter-spacing: -1px;
     text-align: left;
-    margin-bottom: 26px;
+    color: #FFF;
+    margin-bottom: 25px;
 }
 
-.about h5 {
-    color: #FFFFFF;
+.rightContent h5 {
     font-family: Epilogue;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 18px;
+    color: #FFF;
+    margin-bottom: 25px;
 }
 
-.about p {
-    color: #FFFFFFA3;
+.rightContent p {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 34px;
-}
-
-.about button {
-    padding: 10px 15px;
-    background-color: #B550F8;
-    border-radius: 7px;
     color: #fff;
+    margin-bottom: 25px;
 }
 
-/* This is a rowWraper2 (Inside the firstSection) */
-.rowWraper3 {
-    margin-top: 142PX;
-    height: 500px;
+.rightContent button {
+    padding: 10px 15px;
+    background-color: #bf35c4;
+    color: #fff;
+    border-radius: 7px;
+}
+
+/* This ia a Fourth Section */
+.fourthSection {
+    background: #28293E;
+    margin: auto;
+    height: 540px;
     width: 100%;
 }
 
-.service h5 {
-    color: #EF6D58;
+.wraperSection-3 {
+    margin: 0 135px;
+}
+
+.content h5 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 3px;
     text-align: left;
-    margin-bottom: 17px;
+    color: #EF6D58;
+    margin-bottom: 25px;
 }
 
-.service h2 {
-    max-width: 333px;
-    width: 100%;
-    color: #fff;
+.content h2 {
+    width: 30%;
     font-family: Epilogue;
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
     text-align: left;
-    margin-bottom: 51px;
+    margin-bottom: 80px;
+    color: #fff;
 }
 
 .services {
     display: flex;
 }
 
-.techService {
+.servicesExpert {
     height: 400px;
-    max-width: 391px;
-    width: 100%;
-    border: 1px solid #F3D1BF;
+    width: 600px;
     background-color: #fff;
-    padding: 48px 0px 0px 48px;
+    border: 1px solid rgb(151, 99, 99);
+    padding-right: 100px;
 }
 
-.imgTool {
+.servicesExpert .imgTool {
+    margin-top: 40px;
+    margin-left: 60px;
+    padding: 30px;
+    border-radius: 45%;
+    line-height: 32px;
+    margin-bottom: 30px;
     background-color: #EF6C57;
-    width: auto;
-    height: auto;
-    padding: 20px;
-    border-radius: 44%;
-    margin-bottom: 41px;
 }
 
-.techService h2 {
-    font-family: Epilogue;
+.servicesExpert h2 {
+    margin-left: 60px;
+    line-height: 32px;
     font-size: 24px;
     font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 19px;
+    margin-bottom: 25px;
 }
 
-.techService p {
-    font-family: Epilogue;
+.servicesExpert p {
+    margin-left: 60px;
+    line-height: 32px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 26px;
-    color: #391400A3;
+    margin-bottom: 25px;
 }
 
-.techService h4 {
-    color: #391400;
-    font-family: Epilogue;
+.servicesExpert h4 {
+    margin-left: 60px;
+    line-height: 32px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 32px;
-    text-align: left;
+    color: #000;
 }
 
-/* From hare secondSection */
-.secondSection {
+/* This is a fifth section */
+.fifthSection {
+    height: 2000px;
+    width: 100%;
+    /*  background-color: #FDF0E9; */
     background-color: #FDF0E9;
 }
 
 .secondRowWraper {
     display: flex;
-    margin-bottom: 135px;
-
 }
 
-.imgPlay {
-    margin-top: 153px;
+.leftImgBack {
+    margin-top: 230px;
     background: url(../assets/images/Bitmap.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 570px;
     height: 400px;
-    width: 100%;
-    margin-right: 130px;
+    width: 600px;
 }
 
-.play {
-    width: auto;
+.leftImgBack .play {
     margin-top: 100px;
+    margin-bottom: 170px;
     margin-left: 200px;
+    margin-right: 100px;
 }
 
-.imgPlay h5 {
-    padding-left: 33px;
-    padding-top: 80px;
-    color: #fff;
+.wraperSection-4 .rightContent {
+    margin-top: 200px;
 }
 
-.vidReel {
-    margin-top: 213px;
+.rightContent h5 {
+    color: #EF6C57;
 }
 
-.vidReel h5 {
-    color: #EF6D58;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-align: left;
-    margin-bottom: 17px;
+.wraperSection-4 .rightContent h2 {
+    color: #000;
 }
 
-.vidReel h2 {
-    color: #391400;
-    font-family: Epilogue;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 48px;
-    text-align: left;
-    margin-bottom: 28px;
+.wraperSection-4 .rightContent p {
+    color: #000;
 }
 
-.vidReel p {
-    color: #391400A3;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-}
-
-/* From hare is secondRowWraper1 */
-.secondRowWraper1 {
+.experienceSheet {
     display: flex;
-    margin-bottom: 118px;
+    margin-top: 20px;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .yearOfExperience {
-    height: 176px;
-    width: 391px;
+    height: 190px;
+    width: 450px;
     border: 1px solid #F3D1BF;
-    padding: 45px 0px 0px 48px;
+    padding-left: 30px;
 }
 
 .yearOfExperience h2 {
-    font-family: Epilogue;
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
-    text-align: left;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: Epilogue;
 }
 
 .yearOfExperience p {
-    color: #391400;
+    font-size: 16px;
     font-family: Epilogue;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
+    font-weight: 300;
 }
 
-/* This is secondRowWraper2 (inside the secondSection)  */
-.secondRowWraper2 {
+.work {
+    margin-top: 110px;
+    margin-left: 135px;
+    margin-right: 135px;
     display: flex;
-}
-
-.howWork {
-    max-width: 450px;
     width: 100%;
 }
 
-.howWork h4 {
-    color: #EF6D58;
+.work .howWork {
+    height: 300px;
+    width: 30%;
+
+}
+
+.work .howWork h4 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 3px;
     text-align: left;
-    margin-bottom: 17px;
+    color: #EF6D58;
+    margin-bottom: 10px;
 }
 
-.howWork h2 {
-    color: #391400;
+.work .howWork h2 {
     font-family: Epilogue;
     font-size: 40px;
     font-weight: 800;
     line-height: 48px;
     text-align: left;
-    margin-bottom: 31px;
+    margin-bottom: 10px;
 }
 
-.howWork p {
-    color: #391400A3;
+.work .howWork p {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
-.howWork h5 {
-    color: #391400;
+.work .howWork h5 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-
 }
 
 .fullServices {
-    display: block;
-    margin-top: 70px;
-    margin-left: 130px;
-    margin-bottom: 68px;
-}
-
-.item {
-    display: flex;
+    width: 50%;
+    margin-top: 50px;
+    padding-left: 70px;
+    height: 350px;
 
 }
 
-.number {
-    color: #391400;
-    font-family: Epilogue;
-    font-size: 72px;
-    font-weight: 800;
-    line-height: 80px;
-    letter-spacing: -2px;
-    margin-right: 48px;
-}
-
-.text {
-    color: #391400;
-    font-family: Epilogue;
-    font-size: 24px;
+.same {
+    font-size: 20px;
     font-weight: 700;
-    line-height: 32px;
-    padding: 20px 0px 50px 40px;
 }
 
-/* This is a Horizontal Line code */
-.horizontalLine1 {
-    height: 1px;
-    width: 100%;
-    background-color: #F3D1BF;
-    margin-top: 77px;
-    margin-bottom: 97px;
-    margin-left: 8px;
-    margin-right: 8px;
+.one::before {
+    content: "1        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+
 }
 
-/* This is a portfolio */
-.secondRowWraper3 {
-    width: 100%;
-    height: 300px;
-    margin-left: 8px;
-    margin-right: 8px;
+.two::before {
+    content: "2        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+
 }
 
-.porfolio h5 {
-    color: #EF6D58;
+.three::before {
+    content: "3        ";
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Epilogue;
+    padding-left: 230px;
+}
+
+/* Portfolio section */
+.porfolio {
+    margin-top: 80px;
+}
+
+.portfolioContent {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 20px;
+    color: #EF6D58;
+    margin-bottom: 40px;
 }
 
 .latestWork {
-    width: 100%;
-}
-
-.latestWork h2 {
-    color: #391400;
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
     line-height: 64px;
     letter-spacing: -1px;
-    margin-bottom: 44px;
     text-align: center;
+    color: #391400;
+    margin-bottom: 50px;
 }
 
 .showAllWork {
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
 .showAllWork h3 {
-    color: #391400A3;
-    font-family: Epilogue;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    margin-right: 40px;
+    padding-right: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
 }
 
-/* This is for dropdown */
-.menuBar {
-    background-color: #fff;
-    display: none;
-}
-
-.menuBar ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.menuBar ul li {
-    height: 40px;
-    padding: 10px;
-}
-
-.menuBar ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.fa-solid {
-    padding-left: 150px;
-}
-
-.menuBar .active ul li:hover {
-    border-radius: 4px;
-}
-
-.subMenu {
-    display: none;
-}
-
-.menuBar ul li:hover .subMenu {
-    display: block;
-    position: absolute;
-    background-color: rgb(134, 151, 98);
-    border-radius: 4px;
-    margin-top: 10px;
-
-}
-
-.menuBar ul li:hover .subMenu ul {
-    display: block;
-}
-
-/*  This is secondRowWraper4 (inside the secondSection) */
-.secondRowWraper4 {
-    max-height: 200px;
-
+/* From hare is different work like Techonology */
+.technology {
+    /* background-color: #28293E; */
+    height: 100%;
+    width: 90%;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .techTool {
+    width: 90%;
+    position: relative;
     display: flex;
 }
 
 .techImg {
-    padding-right: 30px;
-    padding-bottom: 30px;
-    position: relative;
+    margin: 10px;
+    width: 400px;
+    height: auto;
 }
 
-.techImg img {
-    width: auto;
+.techTool .techImg {
+    height: 416px;
+    width: 400px;
 }
 
-.secondRowWraper4 .techTool .heading .head3 {
+.techTool .techImg .head3 {
+    top: 250px;
+    left: 70px;
     position: absolute;
-    top: 256px;
-    left: 48px;
     color: #000;
     border: 1px solid #fff;
-    padding: 6px 15px;
+    padding: 6px 10px;
     border-radius: 50px;
     background-color: #fff;
 }
 
-.techImg .head2 {
-    position: absolute;
-    top: 317px;
-    left: 48px;
-    font-family: Epilogue;
+.techTool .techImg .head2 {
     font-size: 40px;
-    font-weight: 800;
-    line-height: 48px;
-    text-align: left;
+    font-weight: 700;
+    top: 300px;
+    left: 70px;
+    position: absolute;
     color: #fff;
 }
 
 .techTool1 {
+    width: 90%;
+    position: relative;
     display: flex;
-    margin-bottom: 34px;
 }
 
-.techTool1 .head3 {
+.head3-2 {
     position: absolute;
-    top: 256px;
-    left: 48px;
+    top: 250px;
+    margin-left: 70px;
     color: #000;
     border: 1px solid #fff;
-    padding: 6px 15px;
+    padding: 6px 10px;
     border-radius: 50px;
     background-color: #fff;
 }
 
-.techTool1 .head2 {
-    position: absolute;
-    top: 317px;
-    left: 48px;
-    font-family: Epilogue;
+.head2-2 {
     font-size: 40px;
-    font-weight: 800;
-    line-height: 48px;
-    text-align: left;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
     color: #fff;
 }
 
-/* fOR BTN */
-.btn {
-    text-align: center;
-
-}
-
-.btn button {
-    color: #fff;
+.head3-3 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
     border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-3 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-4 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-4 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-5 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-5 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.head3-6 {
+    position: absolute;
+    top: 250px;
+    margin-left: 70px;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.head2-6 {
+    font-size: 40px;
+    font-weight: 700;
+    top: 300px;
+    margin-left: 70px;
+    position: absolute;
+    color: #fff;
+}
+
+.buttonE button {
+    margin-left: 500px;
+    margin-top: 40px;
+    color: #FFF;
     padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #28293E;
-
-}
-
-/* This is a thirdSection */
-.thirdSection {
+    border-radius: 15px;
     background-color: #28293E;
 }
 
-.thirdRowWraper {
-    margin-top: 1000px;
-    width: 100%;
-    height: 350px;
-    background-color: #FDF0E9;
+/* This is a sixth section */
+.sixthSection {
+    background-color: #28293E;
+    border: 1px solid #28293E;
+    height: 440vh;
 }
 
-.bg-img .star {
-    width: auto;
-    margin-top: -80px;
-    margin-left: 84px;
+.company {
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
-.bg-img .shapeBox {
-    width: auto;
-    padding: 20px;
-    margin: 0 0px 41px 0px;
-    margin-left: -114px;
-    margin-top: -120px;
-}
-
-.wraper {
+.comStarted {
+    margin-top: 970px;
     display: flex;
+    height: 350px;
+    width: 100%;
+    background-color: #FDF0E9;
+    background-position: center;
 }
 
-.wraper .started {
-    padding-left: 84px;
-    margin-right: 83px;
+.started {
+    background: url(../assets/images/Combined\ Shape1.png);
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    padding-bottom: 150px;
+    border: 1px solid #fff;
 }
 
-.wraper .started h5 {
-    color: #EF6D58;
+.started img {}
+
+.started {
+    height: auto;
+    width: 20%;
+}
+
+.started h5 {
+    margin-top: 70px;
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 3px;
     text-align: left;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    color: #EF6C57;
 }
 
-.wraper .started h2 {
-    color: #391400;
+.started h2 {
     font-family: Epilogue;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 23px;
-    width: 217px;
+    margin-bottom: 25px;
 }
 
-.wraper .started button {
-    padding: 10px 20px;
-    background-color: #EF6D58;
-    border-radius: 5px;
-    color: #fff;
-    border: 0.02px solid #EF6D58;
+.started button {
+    padding: 10px 15px;
+    background-color: #EF6C57;
+    border-radius: 7px;
 }
 
-.wraper .para {
-    margin-right: 94px;
-    margin-top: 60px;
+.para {
+    height: auto;
+    width: 20%;
 }
 
-.wraper .para p {
-    width: 270px;
+.para p {
+    margin-top: 150px;
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    color: #391400A3;
-    padding: 0px 10px 0px 10px;
-}
-
-.wraper .imag {
-    width: 338px;
 }
 
 .imag {
-    background-image: url("../assets/images/Path.png");
+    background: url(../assets/images/Path.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    height: auto;
+    width: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-left: 60px;
 }
 
-/* This is a thirdRowWraper inside the ( thirdSection ) */
-.thirdRowWraper1 {
+/* From hare the other work are implemented  (About)*/
+.aboutSec {
+    margin-left: 135PX;
+    margin-right: 135PX;
+    width: 100%;
     display: flex;
+    margin-top: 150px;
 }
 
-.aboutImg {
-    margin-top: 228px;
-    margin-right: 125px;
+.aboutSec .aboutContent {
+    height: auto;
+    width: 25%;
+    margin-left: 150px;
 }
 
-.aboutImg img {
-    width: 579px;
-}
-
-.aboutContent {
-    margin-top: 283px;
-}
-
-.aboutContent {
-    margin-top: 283px;
-}
-
-.aboutContent h5 {
-    color: #EF6D58;
+.aboutSec .aboutContent h5 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 3px;
     text-align: left;
+    margin-top: 40px;
+    color: #ce5d5d;
     margin-bottom: 20px;
 }
 
-.aboutContent h2 {
-    color: #fff;
+.aboutSec .aboutContent h2 {
+    color: #FFF;
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
     line-height: 64px;
     letter-spacing: -1px;
     text-align: left;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
+
 }
 
-.aboutContent h4 {
-    color: #fff;
+.aboutSec .aboutContent h4 {
     font-family: Epilogue;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 18px;
-
+    margin-bottom: 20px;
+    color: #FFF;
 }
 
-.aboutContent p {
-    color: #FFFFFFA3;
+.aboutSec .aboutContent p {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
+    color: #FFF;
 }
 
-.aboutContent button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #B550F8;
-    color: #fff;
-    border: 0.02px solid #B550F8;
+.aboutSec .aboutContent button {
+    padding: 10px 15px;
+    color: #FFF;
+    background-color: #bf35c4;
+    border-radius: 10px;
 }
 
-/* This is a thirdRowWraper2 inside the ( thirdSection ) */
-.thirdRowWraper2 {
+.testomonials {
     margin-top: 160px;
     width: 100%;
-    height: 900px;
-    background-color: #28293E;
+    max-height: fit-content;
+    object-fit: cover;
 }
 
 .testContent {
+    text-align: center;
     width: 30%;
     margin: auto;
-    text-align: center;
 }
 
 .testContent h5 {
-    color: #EF6D58;
+    color: #EF6C57;
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
@@ -998,16 +930,19 @@ img {
 }
 
 .testContent h2 {
-    color: #fff;
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
     line-height: 64px;
     letter-spacing: -1px;
     text-align: center;
+    color: #FFF;
+    margin-bottom: 20px;
 }
 
 .testReview {
+    margin-left: 135PX;
+    margin-right: 135PX;
     width: 100%;
     text-align: left;
     margin-top: 100px;
@@ -1030,7 +965,6 @@ img {
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: auto;
 }
 
 .review1 .ParaG {
@@ -1047,13 +981,11 @@ img {
 
 .photogram {
     display: flex;
-    margin-bottom: 200px;
 }
 
 .photogram .revImgPic {
     margin-left: 50px;
     padding-right: 40px;
-    width: auto;
 }
 
 .name h3 {
@@ -1075,24 +1007,25 @@ img {
 .btn {
     padding: 10px 25px;
     background-color: #fff;
-    border-radius: 5px;
-    border: 0.02px solid #fff;
-    font-weight: 700;
-
 }
 
 .buttonSeeAll {
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
 }
 
-/* This is a fourthRowWraper inside the ( fourthSection ) */
-.fourthSection {
+/* This is a seven section*/
+.seventhSection {
+    height: 500vh;
+    width: 100%;
     background-color: #FDF0E9;
+    padding: 10px 15px;
 }
 
-.fourthRowWraper {
-    margin-top: 400px;
+.pricrContent {
+    margin-top: 300px;
+    margin-left: 120px;
+    width: 30%;
 }
 
 .pricrContent h5 {
@@ -1114,7 +1047,6 @@ img {
     letter-spacing: -1px;
     text-align: left;
     color: #391400;
-    max-width: 358px;
 }
 
 .pricPlan {
@@ -1129,7 +1061,7 @@ img {
     margin-top: 30px;
     padding-left: 60px;
     padding-top: 50px;
-    border: 1px solid #F3D1BF;
+   border: 1px solid #3A3C56;
 }
 
 .consaltation h5 {
@@ -1140,7 +1072,7 @@ img {
     line-height: 32px;
     letter-spacing: 3px;
     text-align: left;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
 }
 
 .consaltation h2 {
@@ -1149,7 +1081,7 @@ img {
     font-weight: 800;
     line-height: 48px;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .consaltation p {
@@ -1158,7 +1090,8 @@ img {
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
+    width: 50%;
 }
 
 .consaltation .brandDesign {
@@ -1166,36 +1099,20 @@ img {
     margin-bottom: 25px;
 }
 
-.consaltation .brandDesign img {
-    width: auto;
-}
-
 .brandDesign h4 {
     padding-left: 20px;
-}
-
-.brandDesign h6 {
-    font-family: Epilogue;
-    font-weight: 400;
-    padding-left: 20px;
-    font-size: 16px;
-    color: #391400;
-
 }
 
 .consaltation button {
     padding: 10px 20px;
     background-color: #FFF;
     border-radius: 5px;
-    border: 0.02px solid #fff;
-    color: #391400;
-    margin-top: 40px;
 }
 
 .popular {
     height: 542px;
     width: 420px;
-    border: 1px solid #3914000A;
+    border: 1px solid #fff;
     padding-left: 60px;
     padding-top: 20px;
     background-color: #fff;
@@ -1203,7 +1120,6 @@ img {
 
 .popular img {
     margin-bottom: 10px;
-    width: auto;
 }
 
 .popular h5 {
@@ -1233,6 +1149,7 @@ img {
     line-height: 32px;
     text-align: left;
     margin-bottom: 25px;
+    width: 50%;
 }
 
 .brandDesign {
@@ -1248,23 +1165,20 @@ img {
     padding: 10px 20px;
     background-color: #FFF;
     border-radius: 5px;
-    border: 0.02px solid #EF6D58;
-    background-color: #EF6D58;
-    color: #fff;
 }
 
-/* This is a fourthRowWraper1 inside the ( fourthSection ) */
-.fourthRowWraper1 {
+/* From hare FAQ */
+.faq {
     display: flex;
     margin-top: 200px;
-    width: 100%;
-    background-color: #FDF0E9;
+    margin-left: 135px;
+    margin-right: 135px;
+    width: 100%
 }
 
 .faqFrequent {
+    width: 40%;
     height: auto;
-    width: 100%;
-    margin-right: 130px;
 }
 
 .faq1 h5 {
@@ -1275,7 +1189,7 @@ img {
     letter-spacing: 3px;
     text-align: left;
     color: #EF6C57;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .faq1 h2 {
@@ -1284,8 +1198,8 @@ img {
     font-weight: 800;
     line-height: 48px;
     text-align: left;
-    margin-bottom: 31px;
-    max-width: 371px;
+    width: 50%;
+    margin-bottom: 10px;
 }
 
 .faq1 p {
@@ -1294,12 +1208,15 @@ img {
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-    margin-bottom: 29px;
+    margin-bottom: 10px;
     width: 70%;
+
 }
 
 .faqFrequent1 {
-    border: 1px solid #F3D1BF;
+    width: 44%;
+    height: 680px;
+    border: 1px solid #fff;
 }
 
 .faq2 {
@@ -1311,10 +1228,6 @@ img {
 
 .agency {
     display: flex;
-}
-
-.agency img {
-    width: auto;
 }
 
 .agency h3 {
@@ -1331,7 +1244,7 @@ img {
     margin-bottom: 45px;
 }
 
-.faq2 p {
+.faq2 {
     font-family: Epilogue;
     font-size: 16px;
     font-weight: 400;
@@ -1342,11 +1255,7 @@ img {
 .agencyWrap {
     display: flex;
     padding: 40px;
-    border: 1px solid #F3D1BF;
-}
-
-.agencyWrap img {
-    width: auto;
+    border: 1px solid white;
 }
 
 .agencyWrap h3 {
@@ -1365,15 +1274,10 @@ img {
     margin-left: 180px;
 }
 
-
 .agencyWrap1 {
     display: flex;
     padding: 40px;
-    border: 1px solid #F3D1BF;
-}
-
-.agencyWrap1 img {
-    width: auto;
+    border: 1px solid white;
 }
 
 .agencyWrap1 h3 {
@@ -1396,7 +1300,7 @@ img {
 .agencyWrap2 {
     display: flex;
     padding: 40px;
-    border: 1px solid #F3D1BF;
+    border: 1px solid white;
 }
 
 .agencyWrap2 h3 {
@@ -1409,43 +1313,26 @@ img {
     padding-top: 20px;
 }
 
-.agencyWrap2 img {
-    width: auto;
-}
-
 .agencyWrap2 .down {
     padding-top: 20px;
     margin-bottom: 10px;
     margin-left: 215px;
 }
 
-/* This is a fourthRowWraper1 inside the ( fourthSection ) (Logo) */
-
-.fourthRowWraper2 {
-    margin-top: 149px;
+/* From hare logo 1*/
+.logo1 {
+    margin-top: 130px;
+    text-align: center;
 }
 
-.fourthRowWraper2 .none {}
-
-.hideLogo .block {
-    width: auto;
-    display: none;
-}
-
-/* This is horizontal line */
 .horizontalLine {
     height: 1px;
+    width: 83%;
     background-color: #F3D1BF;
     margin-top: 100px;
     text-align: center;
-}
-
-/* This is a fourthRowWraper3  inside the ( fourthSection ) */
-.horizontalLine2 {
-    height: 1px;
-    background-color: #F3D1BF;
-    text-align: center;
-    margin-top: 30px;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .award {
@@ -1455,16 +1342,15 @@ img {
     font-weight: 800;
     line-height: 48px;
     text-align: center;
-}
-
-.award1 img {
-    width: auto;
+    margin-left: 135px;
 }
 
 .award1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .award1 {
@@ -1494,6 +1380,16 @@ img {
     padding-left: 10px;
 }
 
+.horizontalLine1 {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
 .moreExp {
     display: flex;
     margin-top: 45px;
@@ -1505,11 +1401,13 @@ img {
     margin-right: 10px;
 }
 
-/* This is a fourthRowWraper4  inside the ( fourthSection ) (blog) */
-.fourthRowWraper4 {
+/* From hare is a blog section */
+.blogSec {
     display: flex;
     justify-content: space-between;
-    margin-top: 128px;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 150px;
 }
 
 .blog h5 {
@@ -1524,8 +1422,7 @@ img {
 }
 
 .blog h2 {
-    width: 100%;
-    max-width: 358px;
+    width: 90%;
     font-family: Epilogue;
     font-size: 56px;
     font-weight: 800;
@@ -1542,59 +1439,64 @@ img {
 .discoverAll button {
     background-color: #FFF;
     padding: 10px 20px;
-    border: 0.02px solid #fff;
 }
 
-/* This is a fourthRowWraper5  inside the ( fourthSection ) (blog) */
-.fourthRowWraper5 {
+/* From hare is blog Image */
+.blogImg {
     display: flex;
-    margin-top: 64px;
-    max-height: 100px;
+    margin-top: 200px;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
 .blogSrories img {
-    width: auto;
     margin-bottom: 20px;
+    
 }
 
 .blogSrories h3 {
     margin-bottom: 20px;
-    color: #fff;
+    color: #FFF;
     font-family: Epilogue;
-    font-size: 20px;
-    line-height: 32px;
 }
 
 .blogSrories h2 {
-    font-size: 24px;
-    line-height: 32px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #FFF;
     font-family: Epilogue;
     width: 70%;
 }
 
 .blogSrories h5 {
     margin-bottom: 20px;
-    color: #fff;
+    color: #FFF;
     font-family: Epilogue;
 }
 
-/* This is a fifthSection  inside the ( fifthSection ) (blog) */
-.fifthSection {
+/* From hare is Eight section */
+.eightSection {
     background-color: #28293E;
+    border: 1px solid #28293E;
+    height: 200vh;
     width: 100%;
 }
 
-.horizontalLine3 {
-    border: 1px solid #3A3C56;
-    margin-top: 350px;
+.horizontalLineRule {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 300px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
 }
 
-.fifthRowWraper {
-    margin-top: 60px;
+.news {
     display: flex;
     justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-top: 40px;
 }
 
 .newsLetter h2 {
@@ -1612,35 +1514,35 @@ img {
     margin-right: 10px;
 }
 
-.subscribe {
-    display: flex;
-}
-
 .subscribe button {
     padding: 8px 20px;
     color: #FFF;
     background-color: #28293E;
     border-radius: 7px;
-    border: 1px solid #FFFFFF4B;
 }
 
-.horizontalLine4 {
-    border: 1px solid #3A3C56;
+.horizontalLineRule1 {
+    height: 1px;
+    width: 83%;
+    background-color: #F3D1BF;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.info {
+    display: flex;
+    margin-left: 135px;
+    margin-right: 135px;
     margin-top: 60px;
 }
 
-/*  This is a fifthRowWraper1  inside the ( fifthSection )  */
-.fifthRowWraper1 {
-    display: flex;
-    margin-top: 143px;
-}
-
 .touch {
-    height: 496px;
-    width: 570px;
+    height: 500px;
+    width: 600px;
     background-color: #FFF;
     padding: 50px;
-    margin-right: 130px;
 }
 
 .touch h4 {
@@ -1675,18 +1577,16 @@ img {
     background-color: #EF6C57;
     border-radius: 5px;
     color: #fff;
-    border: 0.02px solid red;
 }
 
-/* From hare contact info */
-.contactInfo {
+.contact {
     height: 500px;
     width: 600px;
-    margin-top: 50px;
-
+    padding: 50px 0px 0px 150px;
+    margin-left: 50px;
 }
 
-.contactInfo h5 {
+.contact h5 {
     color: #EF6C57;
     font-family: Epilogue;
     font-size: 16px;
@@ -1697,7 +1597,7 @@ img {
     margin-bottom: 20px;
 }
 
-.contactInfo h2 {
+.contact h2 {
     color: #fff;
     font-family: Epilogue;
     font-size: 56px;
@@ -1708,7 +1608,7 @@ img {
     margin-bottom: 20px;
 }
 
-.contactInfo p {
+.contact p {
     color: #FFFFFFA3;
     font-family: Epilogue;
     font-size: 16px;
@@ -1718,17 +1618,16 @@ img {
     margin-bottom: 20px;
 }
 
-.contactInfo .contactNum {
+.contact .contactNum {
     display: flex;
     margin-bottom: 30px;
 }
 
 .contactNum img {
-    margin-right: 50px;
-    width: auto;
     padding: 10px;
-    background-color: red;
-    border-radius: 50%;
+    margin-right: 50px;
+    background-color: #EF6C57;
+    border-radius: 42%;
 }
 
 .contactNum h4 {
@@ -1740,25 +1639,22 @@ img {
     color: #fff;
 }
 
-/* This is a fifthRowWraper2  inside the ( fifthSection ) */
-.maxHeight {
-    max-height: 340px;
-}
+/* From hare you to build your dream project Helping */
 
-.fifthRowWraper2 {
+.helpingForProject {
     display: flex;
+    margin: 120px 135px 0 135px;
     height: 500px;
-    width: 100%;
-    justify-content: space-evenly;
+    width: 80%;
+    padding: 40px;
+    position: relative;
     background-color: #EF6D58;
-    margin-top: 160px;
 }
 
 .helping1 {
-    width: 100%;
-    max-width: 368px;
+    width: 50%;
     height: 450;
-    padding-top: 60px;
+    padding: 70px 100px 0px 50px;
 }
 
 .helping1 h2 {
@@ -1787,31 +1683,27 @@ img {
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 25px;
-    border: 0.02px solid #fff;
-    color: #391400;
 }
 
 .helping2 {
     height: 450px;
+    width: 50%;
+    padding-left: 50px;
 }
 
-/*  This is a footer section */
+/*From hare the footer */
 footer {
-   /*  background-color: #FDF0E9; */
-    width: 100%;
-}
 
-.footer {
+    background-color: #FDF0E9;
     width: 100%;
-}
+    border: 1px solid #FDF0E9;
 
-.footerImage img {
-    width: auto;
 }
 
 .webflow {
     display: flex;
     justify-content: space-between;
+    margin: 250px 135px 0px 135px;
 }
 
 .footerMenu h5 {
@@ -1851,11 +1743,9 @@ footer {
 .foot {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 40px 135px 0px 135px;
 }
-.foot .conTent2{
-  display: flex;
-}
-.foot .conTent2 h5{
-  padding-left: 68px;
+
+.foot p {
+    width: 80%;
 }

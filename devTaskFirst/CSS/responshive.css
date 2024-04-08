@@ -1,0 +1,723 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 760px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: block;
+    }
+
+    .contact {
+      /*  display: none; */
+    }
+    .contact a{
+      /*  display: none; */
+    }
+
+    .navList {
+       /*  display: none; */
+    }
+
+    .navBar {
+        width: auto;
+    }
+    /* This is new */
+    .navBar .navList,.contact a {
+        background-color: red;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .accessibity {
+        flex-wrap: wrap;
+    }
+
+    .acess {
+        margin-top: 0px;
+    }
+
+    /* This is rowWraper2 */
+    .rowWraper2 {
+        flex-wrap: wrap;
+    }
+
+    .webflow {
+        margin-top: 57px;
+    }
+
+    .about {
+        margin-top: 58px;
+    }
+
+    /* This is secondSection (secondRowWraper) */
+    .secondRowWraper {
+        flex-wrap: wrap;
+    }
+    /* This is for portfolio img (techTool)*/
+    .techTool {
+        flex-wrap: wrap;
+       
+        width: 100%;
+    }
+    .techTool1{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .rowWraper {
+        flex-direction: column-reverse;
+        padding: 0 8px 0 8px;
+    }
+
+    .columnLeft {
+        margin-top: 30px;
+
+    }
+
+    .columnLeft .button button {
+        margin-right: 46px;
+    }
+
+    .columnRight {
+        margin-top: 96px;
+    }
+
+    .navHeader {
+        padding: 1px 8px 0 8px;
+    }
+
+    .horizontalLine {
+        max-width: 329px;
+        width: 94%;
+        margin-top: 64px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    /* This is rowWraper2 */
+    .rowWraper1 {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        margin-top: 60px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .leftImg {
+        max-width: 273px;
+        width: auto;
+    }
+
+    .profesional {
+        margin-top: 36px;
+        max-width: 329px;
+        width: 100%;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .acess {
+        height: 272px;
+        max-width: 329px;
+        width: 100%;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    /* This is rowWraper3 */
+    .rowWraper2 {
+        flex-wrap: wrap;
+    }
+
+    .webflow {
+        margin: 142px 8px 0px 8px;
+    }
+
+    .about {
+        margin: 42px 8px 0px 8px;
+    }
+
+    /* This is a rowWraper3 */
+    .service {
+        margin: 124Px 8px 0px 8px;
+    }
+
+    .services {
+        flex-wrap: wrap;
+        margin: 35px 8px 0 8px;
+    }
+
+    /* This is secondSection (secondRowWraper) */
+    .secondRowWraper {
+        flex-wrap: wrap;
+        padding-left: 8px;
+        margin-bottom: 80px;
+    }
+
+    .imgPlay {
+        margin-top: 1012px;
+        background: url(../assets/images/Bitmap.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 286px;
+        height: 250px;
+        margin-right: 11px;
+        padding-left: 8px;
+    }
+
+    .play {
+        width: 96px;
+        margin-top: 40px;
+        margin-left: 73px;
+
+    }
+
+    .imgPlay h5 {
+        padding-left: 33px;
+        padding-top: 0px;
+    }
+
+    .vidReel {
+        margin-top: 1px;
+    }
+
+    /* This is secondRowWraper1 (inside the secondSection) */
+    .secondRowWraper1 {
+        flex-wrap: wrap;
+        padding: 0px 8px 0px 8px;
+    }
+
+    /* This is secondRowWraper2 (inside the secondSection) */
+    .secondRowWraper2 {
+        flex-wrap: wrap;
+    }
+
+    .howWork {
+        padding: 0px 8px 0px 8px;
+    }
+
+    .fullServices {
+        margin-top: 70px;
+        margin-left: 1px;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .number {
+        margin-right: 15px;
+    }
+
+    .text {
+        padding: 10px 0px 50px 0px;
+    }
+
+    .secondRowWraper3 {
+        padding: 0px 8px 0px 8px;
+    }
+
+    /* This is secondRowWraper3 (inside the secondSection) */
+    .horizontalLine1 {
+        width: 92%;
+
+    }
+
+    /* Show all work portfolio */
+    .latestWork {
+        width: 100%;
+    }
+
+    .latestWork h2 {
+        text-align: center;
+        width: 240px;
+        font-size: 40px;
+    }
+
+    .showAllWork {
+        display: none;
+    }
+
+    .menuBar {
+        display: block;
+        margin-right: 10px;
+
+    }
+
+    /* This is secondRowWraper4 (inside the secondSection)  */
+    .secondRowWraper4 {
+        width: 100%;
+        max-width: 329px;
+    }
+
+    .techTool {
+        flex-wrap: wrap;
+        padding-left: 8px;
+        width: 100%;
+    }
+
+    .techTool1 {
+        display: none;
+    }
+
+    .techImg img {
+        width: 111%;
+        max-width: 273px;
+        height: 400px;
+    }
+
+    /* This is a thirdSection  */
+    .thirdRowWraper {
+        margin-top: 1300px;
+        height: 700px;
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 93%;
+    }
+
+    .wraper {
+        flex-wrap: wrap;
+    }
+
+    .bg-img .star {
+
+        margin-left: 24px;
+    }
+
+    .wraper .started {
+        padding-left: 50px;
+    }
+
+    .wraper .para p {
+        padding-left: 50px;
+        margin-bottom: 40px;
+        padding-right: 20px;
+    }
+
+    /* This is a thirdRowWraper inside the ( thirdSection ) */
+    .thirdRowWraper1 {
+        flex-wrap: wrap;
+    }
+
+    .aboutImg {
+        width: auto;
+        margin-top: 177px;
+    }
+
+    .aboutImg img {
+        width: 290px;
+    }
+
+    .aboutContent {
+        padding: 0px 8px 0px 8px;
+        margin-top: 30px;
+    }
+
+    /* This is a thirdRowWraper2 inside the ( thirdSection ) */
+    .thirdRowWraper2 {
+        background-color: #28293E;
+        margin-top: 160px;
+        width: 100%;
+        padding-left: 8px;
+        height: 1970px;
+    }
+
+    .testContent {
+        width: 100%;
+    }
+
+    .testContent h2 {
+        font-size: 40px;
+    }
+
+
+    .testReview {
+        flex-wrap: wrap;
+    }
+
+    .photogram {
+        flex-wrap: nowrap;
+    }
+
+    .common {
+        height: 480px;
+        width: 273px;
+    }
+
+    .review1 .revImg {
+        margin-left: 10px;
+    }
+
+    .review1 .ParaG {
+        margin-left: 10px;
+    }
+
+    .photogram .revImgPic {
+        margin-left: 10px;
+    }
+
+    .name h3 {
+
+        font-size: 24px;
+    }
+
+    .name h5 {
+        font-size: 16px;
+    }
+
+    .review1 .ParaG {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    /* This is a fourthSection inside the ( fourthSection ) */
+    .fourthRowWraper {
+        margin-top: 400px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .pricrContent h2 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .pricPlan {
+        flex-wrap: wrap;
+        margin-top: 35px;
+
+    }
+
+    .consaltation {
+        margin-top: 0px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .popular {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    /* This is a fourthRowWraper1 inside the ( fourthSection ) */
+    .fourthRowWraper1 {
+        flex-wrap: wrap;
+        padding-left: 8px;
+        margin-top: 153px;
+
+    }
+
+    .faqFrequent {
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+    .faq1 h2 {
+        margin-bottom: 20px;
+    }
+
+    .faq1 h5 {
+        margin-bottom: 17px;
+    }
+
+    .faq1 p {
+        width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .faqFrequent1 {
+        height: 455px;
+        width: 271px;
+        margin-right: 8px;
+    }
+
+    .faq2 {
+        height: 350px;
+        width: 270px;
+        padding: 10px;
+    }
+
+    .agency {
+        width: 249px;
+    }
+
+    .agency img {
+        width: 32px;
+    }
+
+    .agency h3 {
+        margin-bottom: 19px;
+        margin-right: 5px;
+    }
+
+    .faq2 p {
+        width: 250px;
+    }
+
+    /* Agency Wraper */
+    .agencyWrap img {
+        width: 32px;
+    }
+
+    .agencyWrap {
+        padding: 10px;
+    }
+
+    .agencyWrap h3 {
+        width: 226px;
+    }
+
+    .agencyWrap .down {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 35px;
+        height: 50px;
+    }
+
+    /* Agency Wraper1 */
+    .agencyWrap1 {
+        padding: 10px;
+    }
+
+    .agencyWrap1 img {
+        width: auto;
+    }
+
+    .agencyWrap1 h3 {
+        width: 226px;
+    }
+
+    .agencyWrap1 .down {
+        padding-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 36px;
+        height: 41px;
+    }
+
+    /* Agency Wraper2 */
+
+    .agencyWrap2 {
+        padding: 10px;
+    }
+
+    .agencyWrap2 h3 {
+        width: 226px;
+    }
+
+    .agencyWrap2 img {
+        width: auto;
+    }
+
+    .agencyWrap2 .down {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 35px;
+        height: 50px;
+    }
+
+    /* This is a fourthRowWraper1 inside the ( fourthSection ) (Logo) */
+    .fourthRowWraper2 {
+        margin-top: 300px;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .fourthRowWraper2 .none {
+        display: none;
+    }
+
+    .hideLogo .block {
+        width: 100%;
+        max-width: 280px;
+        display: block;
+    }
+
+    /* This is a fourthRowWraper3  inside the ( fourthSection ) */
+
+    .award1 {
+        flex-direction: column;
+    }
+
+    .award1 h3 {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .award1 h4 {
+        width: 100%;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .award1 h6 {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .award1 img {
+        margin-bottom: 20px;
+    }
+
+    /* This is a fourthRowWraper4  inside the ( fourthSection ) (blog) */
+    .fourthRowWraper4 {
+        flex-wrap: wrap;
+        margin-top: 128px;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .discoverAll {
+        margin-top: 35px;
+    }
+
+    /* This is a fourthRowWraper5  inside the ( fourthSection ) (blog) */
+    .fourthRowWraper5 {
+        flex-wrap: wrap;
+        margin-top: 48px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .blogSrories h2 {
+        width: 100%;
+    }
+
+    .blogSrories img {
+        width: 100%;
+        max-width: 329px;
+
+    }
+
+    /* This is a fifthRowWraper  inside the ( fifthSection ) */
+    .fifthRowWraper {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .horizontalLine3 {
+        border: 1px solid #3A3C56;
+        margin-top: 1150px;
+    }
+
+    .subscribe {
+        flex-wrap: wrap;
+    }
+
+    .newsLetter h2 {
+        margin-bottom: 28px;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .subscribe button {
+        width: 100%;
+        padding: 10px 20px;
+        margin-right: 8px;
+    }
+
+    /* This is a fifthRowWraper1  inside the ( fifthSection ) */
+    .fifthRowWraper1 {
+        flex-wrap: wrap;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .touch {
+        height: 484px;
+        max-width: 280px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .contactInfo h2 {
+        font-size: 40px;
+    }
+
+    .contactNum img {
+        padding: 16px;
+    }
+
+    /* This is a fifthRowWraper2  inside the ( fifthSection ) */
+    .maxHeight{
+        max-height: 640px;
+    }
+    .fifthRowWraper2 {
+        flex-wrap: wrap-reverse;
+        height: 736px;
+        width: 100%;
+        max-width: 269px;
+        margin-left: 8px;
+    }
+
+    .helping1 {
+        height: 422px;
+        width: 273px;
+        padding: 10px;
+    }
+
+    .helping1 h2 {
+        font-size: 40px;
+    }
+
+    .helping2 {
+
+        height: 264px;
+        width: 273px;
+        padding: 10px;
+    }
+/*  This is a footer section */
+
+.webflow {
+    flex-direction: column;
+    text-align: center;
+}
+.footerMenu{
+    margin-bottom: 28px;
+}
+.footerMenu h5 {
+   text-align: center;
+}
+.footerService{
+    margin-bottom: 28px;
+}
+.footerService h5 {
+   text-align: center;
+}
+.footerWeb{
+    margin-bottom: 28px;
+}
+.foot {
+    text-align: center;
+   flex-wrap: wrap;
+   margin-top: 43px;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+.foot .conTent2{
+margin-top: 50px;
+text-align: center;
+}
+.foot .conTent2 h5{
+    padding-left:40px;
+  }
+  
+}
